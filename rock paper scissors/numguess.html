@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>number guessing</title>
+    </head>
+    <body>
+        <h1>GUESS THE NUMBER</h1>
+        <input id="guessnum">
+        <button id="checknum"  onclick="check()"> check</button>
+        <P id="result">You RIGHT/WRONG</P>
+
+
+
+
+
+        <script>
+         var guessnum=document.getElementById("guessnum")
+         var checknum=document.getElementById("checknum")
+         var result=document.getElementById("result")
+         var randomnum=Math.floor(Math.random()*10)+1
+
+
+
+         function check(){
+             var enternum=guessnum.value
+             if(randomnum==guessnum){
+                
+                result.textContent="RIGHT"
+               alert(`you won`)
+             }
+             else{
+                
+                result.textContent="WRONG"
+                alert(`you loss`)
+             }
+            }
+        </script>
+    </body>
+</html>
