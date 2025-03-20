@@ -1,0 +1,14 @@
+#events{
+    align-items: center;
+    width:300px;
+    background-color: rgb(22, 150, 192);
+    display:flex;
+    font-size: 4.5rem;
+    height: 300px;
+    font-weight: bold;
+    text-align: center;
+}
+#mybtn{
+     font-size: 3rem;
+     padding-top: 10px;
+}
